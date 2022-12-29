@@ -11,6 +11,7 @@ public class DijkstraAlgo {
         int N = 5;  // number of vertices
         int distances[] = new int[N];
 
+        // her bir vertice e isim verdik
         List<String> nameList = new ArrayList<>();
         nameList.add("A");
         nameList.add("B");
@@ -21,6 +22,7 @@ public class DijkstraAlgo {
 
         // int[][] cost	= new int[N][N];
 
+        // ağırlık değerlerini tuttuğumuz
         int[][] cost	= {
                 { INFINITY,    5,    3, INFINITY,    2},
                 { INFINITY, INFINITY,    2,    6, INFINITY},
@@ -43,7 +45,7 @@ public class DijkstraAlgo {
 
         int w, v, minDistance;
 
-        boolean isVisited[] = new boolean[N];
+        boolean isVisited[] = new boolean[N]; // vertice lerin daha önce uğranılıp uğranılmadığı bilgisini tutan array
 
         D[0] = 0;
         for(v=1; v<N; v++) {

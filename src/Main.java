@@ -1,3 +1,4 @@
+// AVL Treetest ettiğimiz main methodu
 public class Main {
 
     public static void main(String[] args) {

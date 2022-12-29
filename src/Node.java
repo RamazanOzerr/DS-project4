@@ -1,3 +1,4 @@
+// AVL tree için kullandığımız Node class ı
 public class Node {
 
     private int element, height;
