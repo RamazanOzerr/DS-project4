@@ -58,17 +58,4 @@ public class Trie {
 
     }
 
-    // hoca test istemedi ama ben yine de yazdım debug için
-    public static void main(String[] args) {
-        Trie trie = new Trie();
-        trie.insert("gay");
-        trie.insert("hello");
-
-        System.out.println(trie.search("gay")); // true
-        System.out.println(trie.search("hello"));   // true
-        System.out.println(trie.search("lesbian")); // false
-        System.out.println(trie.startsWith("hel")); // true
-
-
-    }
 }

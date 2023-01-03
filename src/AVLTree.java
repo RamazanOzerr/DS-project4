@@ -99,7 +99,7 @@ public class AVLTree {
     }
 
 
-    // bu methdou debug için yazıyoruz hoca istemedi
+    // kodu test etmek için traversel methodları
 
     public void inorderTraversal() {inorderTraversal(root);}
     private void inorderTraversal(Node head) {
