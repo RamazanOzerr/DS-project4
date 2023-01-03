@@ -102,7 +102,6 @@ public class AVLTree {
     // bu methdou debug için yazıyoruz hoca istemedi
 
     public void inorderTraversal() {inorderTraversal(root);}
-
     private void inorderTraversal(Node head) {
         if (head != null)
         {
@@ -112,10 +111,7 @@ public class AVLTree {
         }
     }
 
-    public void postorderTraversel(){
-
-        postorderTraversel(root);
-    }
+    public void postorderTraversel(){ postorderTraversel(root);}
     private void postorderTraversel(Node head){
 
         if(head != null){
@@ -126,7 +122,6 @@ public class AVLTree {
     }
 
     public void preOrderTraversel() { preOrderTravesel(root); }
-
     private void preOrderTravesel(Node head){
 
         if(head != null){

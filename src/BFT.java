@@ -1,5 +1,4 @@
 // Breadth-First Traverse
-
 import java.util.*;
 
 public class BFT {
@@ -34,7 +33,7 @@ public class BFT {
         queue.add(v);  // ilk node u ekledik
         while (queue.size() != 0){
             v = queue.poll(); // delete the element front and assign it to v
-            System.out.println(v+" ");
+            System.out.print(v+" ");
             for(int j=0; j<adj[v].size(); j++){
                 index = adj[v].get(j);
                 if(!visited[index]){
@@ -64,17 +63,10 @@ public class BFT {
         bft.insertEdge(5, 4);
         bft.insertEdge(5, 3);
 
-        System.out.println();
-        bft.BFT(0);
-
-
-//        bft.insertEdge(0, 1);
-//        bft.insertEdge(0, 2);
-//        bft.insertEdge(1, 2);
-//        bft.insertEdge(2, 0);
-//        bft.insertEdge(2, 3);
-//        bft.insertEdge(3, 3);
-//        bft.BFT(2);
+        for(int i = 0; i< bft.n; i++){
+            System.out.print(i+". vertex: ");
+            bft.BFT(i);
+            System.out.println();
+        }
     }
-
 }

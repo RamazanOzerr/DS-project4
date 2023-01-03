@@ -1,5 +1,3 @@
-import java.util.PriorityQueue;
-
 public class PrimsMST {
 
     private static final int n = 9; // number of nodes/vertices in the graph
@@ -19,7 +17,6 @@ public class PrimsMST {
             }
         }
 
-
         return minIndex;
     }
 
@@ -28,7 +25,6 @@ public class PrimsMST {
 
         System.out.println("Edge \t\tWeight"); // have no clue wth im doin
         for(int j = 1; j<n; j++){
-//            System.out.println(mstList[j] + " - "+ j + "\t\t" + graphList[j][mstList[j]]);
             System.out.println(verticeList[mstList[j]] + " - "+ verticeList[j] + "\t\t" + graphList[j][mstList[j]]);
 
         }
@@ -88,6 +84,7 @@ public class PrimsMST {
                 { 0, 0, 0, 0, 0, 2, 0, 1, 6 },
                 { 8, 11, 0, 0, 0, 0, 1, 0, 7 },
                 { 0, 0, 2, 0, 0, 0, 6, 7, 0 }};
+
         mst.designMST(graphList);
 
 
